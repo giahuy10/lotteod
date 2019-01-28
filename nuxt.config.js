@@ -66,6 +66,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     '@nuxtjs/toast',
+    '@nuxtjs/dotenv',
   ],
   toast: {
       position: 'top-right',
