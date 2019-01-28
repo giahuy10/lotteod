@@ -1,0 +1,80 @@
+{
+  "homepage": {
+    "slideshow": {
+      "heading1": "롯데 관측소 데크",
+      "heading2": "미국 전체 아래 도시"
+    },
+    "modtuleTitle": {
+      "overview": "개요",
+      "eventNPromotion": "행사 및 홍보",
+      "takeAtour": "둘러보기",
+      "takeAtourDesc": "",
+      "galleries": "갤러리",
+      "signup": "특별 제공 사인",
+      "signupName": "Name",
+      "signupDesc": "특별 행사 및 예정된 행사에 대한 정기 이메일을 받으려면 아래에 이메일 주소를 입력하십시오.",
+      "signupButton": "가입",
+      "signupEmail": "이메일을 입력하십시오."
+    },
+    "signup": {
+      "blankError": "이메일은 비워 둘 수 없습니다.",
+      "success": "성공적인 가입",
+      "duplicatedError": "이메일은 존재했습니다"
+    },
+    "footer": {
+      "line1": "54 Lieu Giai, Ba Dinh District, 하노이",
+      "line2": "LOTTE 센터 하노이 전화 : + 84-4-3333-6000 팩스 : + 84-4-3771-3439",
+      "line3": "COPYRIGHT © 2019 롯데 센터 하노이. 판권 소유."
+    },
+    "readmore": "더 많은 것을 읽으십시오"
+  },
+  "ticket": {
+    "headerTitle": "방문 정보",
+    "headerDesc": "우리는 천문대를 사용하여 정중하게 정보를 안내합니다.",
+    "ticketCounter": "티켓 카운터",
+    "ticketCounterDesc": "B1 티켓 카운터에있는 전망대를 사용하여 티켓을 구입할 수 있습니다.",
+    "observerionGuide": "전망대 이용 가이드",
+    "useTime": "<span><i class='fa fa-clock'></i> 이용시간 </span> 09:00 ~ 24:00 (Ticketing Counter close at 23:00)",
+    "fee": "<span><i class='fa fa-money'></i> 요금</span>",
+    "unit": "(단위 : VND/명)",
+    "discount": "<ul><li>조조 할인( 9:00 ~10:00): 정상가에 50% 할인. </li> <li>심야 할인(22:00-23:00): 정상가에 50% 할인.</li> <li가족 할인: 2명이상 어른 가족 입장시, 어린이 5명까지 50% 할인 (어른 정가)</li></ul>",
+    "pricingTable": {
+      "general": "일반",
+      "domestic": "베트남인 *",
+      "adult" : "어른  <br> (12세 이상 )",
+      "children": "어린이 (3 ~ 12세)"
+    },
+    "note": "<ul><li>3살이하 어린이 무료 입장  </li> <li>본 티켓은 세금이 포함되어 있습니다</li> <li>최종 입장 시간 23시 00분 </li></ul>"
+  },
+  "explore": {
+    "headerTitle": "탐색",
+    "headerDesc": "",
+    "tabs": {
+      "tab1": "전망대에 관하여",
+      "tab2": "시설 안내",
+      "tab3": "갱도"
+    },
+    "about": {
+      "text1": "롯데 스카이 워크 천문대는 롯데 센터 하노이 상부에 위치하고 있습니다. 베트남에서 세 번째로 높은 건물, <br>  그것은 당신이 화려한 역사와 역동적 인 현대 문화로 활활 타오르는 베트남의 수도 인 하노이의 화려한 360도 전망을 가질 수있는 유일한 장소입니다.",
+      "text2": "천문대는 테마를 기반으로 한 다양한 전시회를 포함 해 공중에서 253 미터의 스릴만한 높이에서만 가질 수있는 다양한 범위의 독특한 경험을 제공합니다 \"하노이의 자존심,\" <br> 구름 위의 카페, 독점적 인 타워 테마의 기념품 등이 있습니다.",
+      "text3": "서울 스카이의 다양한면을 모두 볼 수 있습니다. <br> 사계절과 시간으로 끊임없이 변화하고 있습니다."
+    }
+  },
+  "event": {
+    "headerTitle": "이벤트 및 프로모션",
+    "headerDesc": ""
+  },
+  "contact": {
+    "headerTitle": "문의하기",
+    "headerDesc": "",
+    "nameLabel": "이름",
+    "nameDesc": "당신의 이름을 입력",
+    "mailLabel": "이메일",
+    "mailDesc": "귀하의 이메일 주소를 입력하십시오",
+    "phoneLabel": "전화 번호",
+    "phoneDesc": "전화 번호 입력",
+    "messageLabel": "메시지",
+    "messageeDesc": "메시지 남기기",
+    "submitLabel": "보내다"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "homepage": {
+    "slideshow": {
+      "heading1": "LOTTE OBSERVATION DECK",
+      "heading2": "WHOLE CITY BELOW US"
+    },
+    "modtuleTitle": {
+      "overview": "Overview",
+      "eventNPromotion": "Event and promotion",
+      "takeAtour": "Take a tour",
+      "takeAtourDesc": "",
+      "galleries": "Galleries",
+      "signup": "SIGN UP FOR SPECIAL OFFERS",
+      "signupName": "Name",
+      "signupDesc": "Enter your email address below to receive periodic emails about special offers and upcoming events.",
+      "signupButton": "Signup",
+      "signupEmail": "Enter your email"
+    },
+    "signup": {
+      "blankError": "Email cannot be blank",
+      "success": "Sign up successful",
+      "duplicatedError": "Email is existed"
+    },
+    "footer": {
+      "line1": "54 Lieu Giai, Ba Dinh District, Hanoi",
+      "line2": "LOTTE Center Hanoi Tel : +84-4-3333-6000 Fax : +84-4-3771-3439",
+      "line3": "COPYRIGHT ©2019 LOTTE enter Hanoi. All rights reserved."
+    },
+    "readmore": "Readmore"
+  },
+  "ticket": {
+    "headerTitle": "Visit Information",
+    "headerDesc": "We would like to Introduce our Observation Deck.",
+    "ticketCounter": "Ticketing Counter",
+    "ticketCounterDesc": "You can buy entrance ticket at B1 ticket counter.",
+    "observerionGuide": "Observation Deck use guide",
+    "useTime": "<span><i class='fa fa-clock'></i> Use Time </span> 09:00 ~ 24:00 (Ticketing Counter close at 23:00)",
+    "fee": "<span><i class='fa fa-money'></i> Fee</span>",
+    "unit": "(Unit : VND/Person)",
+    "discount": "<ul><li>From 9:00 to 10:00 Discount 50%. </li> <li>From 22:00 to 23:00 Discount 50%.</li> <li>Family package( Min 2 adults & Max 5 kids) Get 50% off for kid only.</li></ul>",
+    "pricingTable": {
+      "general": "General",
+      "domestic": "Domestic* <br> Discount",
+      "adult" : "Adult <br> (Over 12 Years)",
+      "children": "Children (3 ~ 12 Years)"
+    },
+    "note": "<ul><li>The domestic discount applies to Vietnamese citizen only. </li> <li>3 Years Children or under age are free.</li> <li>All ticket fares are included VAT(10%)</li> <li>Purchasing the tickets at Ticketing Counter located in B1 floor.</li></ul> <p>Observation deck on the day until 23:00 </p>"
+  },
+  "explore": {
+    "headerTitle": "Explore Observation Deck",
+    "headerDesc": "",
+    "tabs": {
+      "tab1": "About Lotte SkyWalk",
+      "tab2": "Facilities guide",
+      "tab3": "Gallery"
+    },
+    "about": {
+      "text1": "The Lotte SkyWalk Observatory is located at the top of the Lotte Center Hanoi. As the third tallest building in Vietnam, <br>  it is the only place where you can take in a gorgeous 360-degree view of Hanoi, the capital city of Vietnam roaring with brilliant history and dynamic modern culture.",
+      "text2": "The Observatory offers a diverse range of unique experiences that can only be had at a thrilling height of 253 meters in the air, including various exhibitions based on the theme \"The Ao Dai of Vietnam,\" <br> a café above the clouds, and exclusive tower-themed souvenirs.",
+      "text3": "Visitors can see all of the different facets of Hanoi Sky, <br> ever-changing with the four seasons and time of day."
+    }
+  },
+  "event": {
+    "headerTitle": "Events and Promotions",
+    "headerDesc": ""
+  },
+  "contact": {
+    "headerTitle": "Contact us",
+    "headerDesc": "Please feel free to leave a message. We will response as soon as possible",
+    "nameLabel": "Name",
+    "nameDesc": "Enter your name",
+    "mailLabel": "Email",
+    "mailDesc": "Enter your email",
+    "phoneLabel": "Phone number",
+    "phoneDesc": "Enter your phone number",
+    "messageLabel": "Message",
+    "messageeDesc": "Leave your message",
+    "submitLabel": "Send"
+  }
+}

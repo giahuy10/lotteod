@@ -1,0 +1,92 @@
+[
+  {
+    "title": "매력 존",
+    "section": [
+      {
+        "name": "에스컬레이터",
+        "thumbnail": "/img/galleries/top-of-hanoi.jpg",
+        "text": "에스컬레이터가 위로 올라가는 환상적인 빛으로 가득 찼다."
+      },
+      {
+        "name": "뱀부로드",
+        "thumbnail": "/img/galleries/Ve-tham-quan-Dai-quan-sat-Lotte-Center-Ha-Noi (1).jpg",
+        "text": "대나무 숲 벽 및 별 - 반짝 반짝 빛나는 밤 하늘 공간"
+      },
+      {
+        "name": "안개 문 1",
+        "thumbnail": "/img/galleries/lotte-hanoi-2.jpg",
+        "text": ""
+      },
+      {
+        "name": "발권 카운터",
+        "thumbnail": "/img/galleries/obs_visit_information_img.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "웰컴 존",
+    "section": [
+      {
+        "name": "환영 극장",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_1.jpg",
+        "text": "과거부터 미래까지 하노이를 볼 수있는 그림 체험 센터"
+      },
+      {
+        "name": "사진 존",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_2.jpg",
+        "text": "장래성 전망 65F로 합성 된 그림을 찍는 지역"
+      },
+      {
+        "name": "안개 문 2",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_3.jpg",
+        "text": ""
+      },
+      {
+        "name": "엘리베이터",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_4.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "경험 존",
+    "section": [
+      {
+        "name": "전망대",
+        "thumbnail": "/img/galleries/lotte-hanoi-8.jpg",
+        "text": "다채로운 야경을 감상하고 뷰 유리의 이미지를 캡처 할 수있는 공간"
+      },
+      {
+        "name": "테라스보기",
+        "thumbnail": "/img/galleries/IMG_1271_385ce.jpg",
+        "text": "하노이를 한눈에 볼 수있는 테라스를 조망하십시오."
+      },
+      {
+        "name": "스카이 워크",
+        "thumbnail": "/img/galleries/89c5811795dc4ea2bd196960f77744dd.jpg",
+        "text": "구름 위를 걷는 놀라운 경험을 가진 천문대"
+      },
+      {
+        "name": "사진 카운터",
+        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "러브 스토리 존",
+    "section": [
+      {
+        "name": "하늘 데이트 가든",
+        "thumbnail": "/img/galleries/IMG_E0214.JPG",
+        "text": "메시지를 쓰고 이벤트로 사진을 찍는 공간"
+      },
+      {
+        "name": "사랑의 사진 존",
+        "thumbnail": "/img/galleries/IMG_E0196.JPG",
+        "text": ""
+      }
+    ]
+  }
+]

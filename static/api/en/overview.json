@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Attraction Zone",
+    "section": [
+      {
+        "name": "Escalator",
+        "thumbnail": "/img/galleries/top-of-hanoi.jpg",
+        "text": "Escalator filled up with fantastic light going upwards"
+      },
+      {
+        "name": "Bamboo Road",
+        "thumbnail": "/img/galleries/Ve-tham-quan-Dai-quan-sat-Lotte-Center-Ha-Noi (1).jpg",
+        "text": "Space with bamboo forest wall and stars-twinkling-night sky"
+      },
+      {
+        "name": "Fog Gate 1",
+        "thumbnail": "/img/galleries/lotte-hanoi-2.jpg",
+        "text": ""
+      },
+      {
+        "name": "Ticketing Counter",
+        "thumbnail": "/img/galleries/obs_visit_information_img.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "Welcome Zone",
+    "section": [
+      {
+        "name": "Welcome Theater",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_1.jpg",
+        "text": "Picture experience center to see Hanoi from the past to the future"
+      },
+      {
+        "name": "Photo Zone",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_2.jpg",
+        "text": "Zone to take pictures synthesized with prospect view 65F"
+      },
+      {
+        "name": "Fog Gate 2",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_3.jpg",
+        "text": ""
+      },
+      {
+        "name": "Elevator",
+        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_4.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "Experience Zone",
+    "section": [
+      {
+        "name": "Observatory",
+        "thumbnail": "/img/galleries/lotte-hanoi-8.jpg",
+        "text": "Space to enjoy colorful night view and capture image of view glass"
+      },
+      {
+        "name": "View Terrace",
+        "thumbnail": "/img/galleries/IMG_1271_385ce.jpg",
+        "text": "View terrace for view of Hanoi at-a-glance"
+      },
+      {
+        "name": "Sky Walk",
+        "thumbnail": "/img/galleries/89c5811795dc4ea2bd196960f77744dd.jpg",
+        "text": "Observatory with amazing experience like walking on clouds"
+      },
+      {
+        "name": "Photo Counter",
+        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "title": "Love Story Zone",
+    "section": [
+      {
+        "name": "Sky Dating Garden",
+        "thumbnail": "/img/galleries/IMG_E0214.JPG",
+        "text": "Space where write messages and take a picture with event"
+      },
+      {
+        "name": "Love Photo Zone",
+        "thumbnail": "/img/galleries/IMG_E0196.JPG",
+        "text": ""
+      }
+    ]
+  }
+]

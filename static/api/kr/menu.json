@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "path": "/index"
+  },
+  {
+    "name": "탐험하다",
+    "path": "/explore"
+  },
+  {
+    "name": "행사 및 프로모션",
+    "path": "/event"
+  },
+  {
+    "name": "티켓",
+    "path": "/ticket"
+  },
+  {
+    "name": "문의하기",
+    "path": "/contact"
+  }
+]

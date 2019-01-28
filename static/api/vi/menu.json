@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Khám phá",
+    "path": "/explore"
+  },
+  {
+    "name": "Sự kiện - Khuyến mại",
+    "path": "/event"
+  },
+  {
+    "name": "Quầy vé",
+    "path": "/ticket"
+  },
+  {
+    "name": "Liên hệ",
+    "path": "/contact"
+  }
+]
