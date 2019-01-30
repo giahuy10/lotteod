@@ -28,18 +28,18 @@ export default {
     }
   },
   methods: {
-    async subscribe () {
+    subscribe () {
       if (this.email === '') {
         this.$toast.error(this.$t('homepage.signup.blankError'), {duration: 2000, position: 'bottom-right'})
       } else {
-        let res = await subscribeEmail(this.email, '')
-        console.log(res)
-        if (res.data.status == 1) {
-          this.$toast.success(this.$t('homepage.signup.success'), {duration: 2000, position: 'bottom-right'})
-        } else {
-          this.$toast.error(this.$t('homepage.signup.duplicatedError'), {duration: 2000, position: 'bottom-right'})
-        }
-        
+        subscribeEmail(this.email, '')
+          .then((res)=> {
+            if (res.data.status == 1) {
+              this.$toast.success(this.$t('homepage.signup.success'), {duration: 2000, position: 'bottom-right'})
+            } else {
+              this.$toast.error(this.$t('homepage.signup.duplicatedError'), {duration: 2000, position: 'bottom-right'})
+            }
+          })
       }
     }
   }

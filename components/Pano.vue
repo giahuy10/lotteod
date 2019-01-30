@@ -19,7 +19,8 @@
     background-image: url('/img/bg/hanoi-360-1080.jpg');
     background-size: auto 100%;
     animation-name: runpano;
-    animation-duration: 40s;
+    animation-duration: 80s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     // border-bottom: 0.5em solid #ccc;
     .panorama-cap {

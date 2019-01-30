@@ -1,8 +1,8 @@
 <template>
     <div class="ResVideoWidget">
       <div class="embed-container YouTube">
-        <video class="bg-video" width="400" playsinline autoplay muted loop poster="/img/bg/180809-1-2000-mai-hanoi-hotel.jpg.thumb.1920.1920.jpg">
-          <source src="/video/intro-new.mp4" type="video/mp4">
+        <video v-on:ended="onEnd" class="bg-video" width="400" playsinline autoplay muted poster="/img/bg/180809-1-2000-mai-hanoi-hotel.jpg.thumb.1920.1920.jpg">
+          <source src="/video/xz2AEvVxbaA (1).mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         
@@ -16,11 +16,20 @@
       </div>
     </div>
 </template>
-
+<script>
+export default {
+  name: 'BgVideo',
+  methods: {
+    onEnd: function () {
+      this.$emit('videoEnded', true)
+    }
+  }
+}
+</script>
 <style lang="scss">
 .ResVideoWidget {
     position: relative;
-    max-height: 728px;
+    max-height: 100vh;
     overflow: hidden;
     border-bottom: 5px solid #e4111d;
     z-index: 100;
@@ -49,6 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: displayVideoHeading;
+    animation-duration: 4s;
+    animation-delay: 16s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     @media screen and (max-width: 767px) {
       padding-top: 55px;
     }
@@ -67,6 +81,11 @@
       font-family: 'Anton', sans-serif !important;
       text-transform: uppercase;
     }
+  }
+  @keyframes displayVideoHeading {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
   }
 </style>
 

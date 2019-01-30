@@ -21,7 +21,9 @@
 </template>
 
 <script>
-import { getItem } from '~/plugins/get'
+import viFacilities from '~/static/api/vi/facilities.json'
+import enFacilities from '~/static/api/en/facilities.json'
+import krFacilities from '~/static/api/kr/facilities.json'
 export default {
   name: 'featured-facilities',
   data () {
@@ -30,9 +32,20 @@ export default {
     }
   },
   methods: {
-    async getItems () {
-      let res = await getItem(this.lang, 'facilities')
-      this.facilities = res.data
+    getItems () {
+      switch(this.$store.state.locale) {
+        case 'vi':
+          this.facilities = viFacilities
+          break;
+        case 'en':
+          this.facilities = enFacilities
+          break;
+        case 'kr':
+          this.facilities = krFacilities
+          break;
+        default:
+          this.facilities = viFacilities
+      }
     }
   },
   mounted () {

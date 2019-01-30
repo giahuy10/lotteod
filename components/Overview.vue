@@ -30,27 +30,34 @@
 </template>
 
 <script>
-import { getItem } from '~/plugins/get'
+import viOverview from '~/static/api/vi/overview.json'
+import enOverview from '~/static/api/en/overview.json'
+import krOverview from '~/static/api/kr/overview.json'
 export default {
   name: 'overview',
-  data () {
-    return {
-      overview: []
-    }
-  },
-  methods: {
-    async getItems () {
-      let res = await getItem(this.lang, 'overview')
-      this.overview = res.data
-    }
-  },
+
   computed: {
     lang () {
       return this.$store.state.locale
+    },
+    overview () {
+      switch(this.$store.state.locale) {
+        case 'vi':
+          return viOverview
+          break;
+        case 'en':
+          return enOverview
+          break;
+        case 'kr':
+          return krOverview
+          break;
+        default:
+          return viOverview
+      }
     }
   },
   mounted () {
-    this.getItems()
+    // this.getItems()
   },
   watch: {
     lang (to, from) {
@@ -62,7 +69,7 @@ export default {
 <style lang="scss">
 .overview {
   // padding: 40px 0;
-  background-image: url('http://cag.vn/wp-content/uploads/2018/12/DJI_0068chinh.png');
+  background-image: url('/img/bg/lotte-3d.jpg');
  
    /* Set a specific height */
   // height: 814px; 

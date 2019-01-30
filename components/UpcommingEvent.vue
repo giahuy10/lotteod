@@ -25,40 +25,20 @@
 </template>
 
 <script>
-import { getList } from '~/plugins/get'
 export default {
   name: 'upcomming-event',
-  data () {
-    return {
-      activeEvent: {
-        title: 'ok ok',
-        desc: '<h1>ngon</h1>'
-      },
-      events: []
-    }
-  },
   methods: {
-    async getItems () {
-      let response = await getList(this.lang, 'event')
-      this.events = response.data
-    },
     openEvent (event) {
-      // console.log(this.$router.options.routes)
-      this.$router.push({name: 'lang-event-slug', params: {slug: encodeURIComponent(event.alias), locale: this.lang, type: 'event'}})
+      this.$router.push({name: 'lang-event-slug', params: {slug: event.alias, id: event.id }})
     }
   },
   computed: {
     lang () {
       return this.$store.state.locale
-    }
-  },
-  mounted () {
-    this.getItems()
-  },
-  watch: {
-    lang (to, from) {
-      this.getItems()
-    }
+    },
+    events () {
+      return this.$store.state.event.events.data
+    },
   }
 }
 </script>

@@ -34,7 +34,6 @@ export default {
       this.$store.dispatch('setLang', lang)
       localStorage.setItem('lang', lang)
       if (process.browser) { 
-        console.log(this.$route)
         var currentPath = this.$route.path
         var path = currentPath.split('/')
         var route = '/'+lang+currentPath.substring(3, currentPath.length)

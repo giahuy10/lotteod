@@ -19,10 +19,7 @@
 		</div>
  
     
-    <video width="400" controls>
-      <source src="/video/interview.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
+    <iframe width="560" height="635" src="https://www.youtube-nocookie.com/embed/xz2AEvVxbaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </template>
 
@@ -53,8 +50,9 @@ export default {
       }
     }
   }
-  video {
+  video, iframe {
     width: 100%;
+    
   }
 }
 </style>

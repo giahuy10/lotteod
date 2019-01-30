@@ -54,8 +54,10 @@
 </template>
 
 <script>
-import { getItem } from '~/plugins/get'
 import LocaleSwitcher from '~/components/LocaleSwitcher'
+import viMenu from '~/static/api/vi/menu.json'
+import enMenu from '~/static/api/en/menu.json'
+import krMenu from '~/static/api/kr/menu.json'
 export default {
   name: 'app',
   components: {
@@ -76,9 +78,20 @@ export default {
         this.navClass = ''
       }
     },
-    async getItems () {
-      let res = await getItem(this.$store.state.locale, 'menu')
-      this.items = res.data
+    getItems () {
+      switch(this.$store.state.locale) {
+        case 'vi':
+          this.items = viMenu
+          break;
+        case 'en':
+          this.items = enMenu
+          break;
+        case 'kr':
+          this.items = krMenu
+          break;
+        default:
+          this.items = viMenu
+      }
     }
   },
   created () {
@@ -86,6 +99,7 @@ export default {
     if (process.browser) { 
       window.addEventListener('scroll', this.handleScroll)
     }
+    
   },
   computed: {
     lang () {
@@ -111,7 +125,7 @@ export default {
         color: #000;
       }
     }
-    overflow: hidden;
+    // overflow: hidden;
     &:hover {
       overflow: auto;
     }

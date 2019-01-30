@@ -1,8 +1,14 @@
 
+const configDetail = require('./config')
 const pkg = require('./package')
 module.exports = {
   mode: 'universal',
-
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://lotteodapi.com/',
+    apiUrl: configDetail.apiURL,
+    host: configDetail.host,
+    port: configDetail.port
+  },
   /*
   ** Headers of the page
   */
@@ -21,17 +27,7 @@ module.exports = {
     middleware: 'i18n'
   },
   generate: {
-    // routes: ['/vi/index', '/vi/explore', '/vi/explore/gallery', '/vi/explore/facilities', '/vi/event', '/vi/event/:slug', '/vi/ticket', '/vi/contact', '/en/index', '/en/explore' , '/en/explore/gallery', '/en/explore/facilities',  '/en/event', '/en/event/:slug', '/en/ticket', '/en/contact', '/kr/index', '/kr/explore' , '/kr/explore/gallery', '/kr/explore/facilities', '/kr/event', '/kr/event/:slug','/kr/ticket', '/kr/contact']
-    // routes: function (callback) {
-    //   axios.get('http://lotteodapi.com/api/?act=event&type=list')
-    //   .then((res) => {
-    //     const routes = res.data.data.map((user) => {
-    //       return '/event/' + user.alias
-    //     })
-    //     callback(null, routes)
-    //   })
-    //   .catch(callback)
-    // }
+ 
   },
   manifest: {
     theme_color : 'red'
@@ -66,7 +62,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     '@nuxtjs/toast',
-    '@nuxtjs/dotenv',
+    'nuxt-fontawesome'
   ],
   toast: {
       position: 'top-right',

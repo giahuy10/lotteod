@@ -1,8 +1,8 @@
 <template>
   <div class="event">
-    <header-banner :title="$t('event.headerTitle')" :desc="detail.title ? detail.title : clientDetail.title" :img="headerImage"></header-banner>
+    <header-banner :title="$t('event.headerTitle')" :desc="detail.title " :img="headerImage"></header-banner>
     <div class="container">
-      <div class="event-detail" v-html="detail.text ? detail.text : clientDetail.text">
+      <div class="event-detail" v-html="detail.text ">
 
       </div>
       
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import { getDetail } from '~/plugins/get'
 import HeaderBanner from '~/components/HeaderBanner.vue'
 export default {
   components: {
@@ -23,9 +22,8 @@ export default {
       headerImage: '/img/header/lotte_about_visual.jpg'
     }
   },
-  async asyncData({ params, error }) {
-    let res = await getDetail(params.lang, 'event', params.slug)
-    return { clientDetail: res.data }
+  async asyncData({ store, params }) {
+    await store.dispatch('event/getEventDetail', { id: params.id, slug: params.slug, locale: store.state.locale })
   },
   mounted () {
     // this.detail = this.$store.state.eventDetail
@@ -35,26 +33,15 @@ export default {
       return this.$store.state.locale
     },
     detail () {
-      return this.$store.state.eventDetail
-    }
-  },
-  watch: {
-    lang (to, from) {
-      this.getItemDetail(to)
-    }
-  },
-  methods: {
-    getItemDetail(to) {
-      this.$route.params.lang = to
-      this.$store.dispatch('changeLang', this.$route)
+      return this.$store.state.event.eventDetail
     }
   },
   head () {
     return {
-      title: this.detail.title ? this.detail.title : this.clientDetail.title,
+      title: this.detail.title,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: this.detail.text ? this.detail.text : this.clientDetail.text }
+        { hid: 'description', name: 'description', content: this.detail.text }
       ]
     }
   },

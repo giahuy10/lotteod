@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <Pano/>
+    <Pano v-if="videoEnd"/>
+    <Video v-else @videoEnded="endVideo"/>
     <Overview/>
     <UpCommingEvent/>
     <Galleries/>
@@ -30,8 +31,11 @@ export default {
   name: 'home',
   data () {
     return {
-      position: 0
+      videoEnd: false
     }
+  },
+  async asyncData ({ store }) {
+    await store.dispatch('event/getEvents', { limit: 12, locale: store.state.locale })
   },
   methods: {
     showModal () {
@@ -39,6 +43,9 @@ export default {
     },
     hideModal () {
       this.$refs.promotion.hide()
+    },
+    endVideo (value) {
+      this.videoEnd = true
     }
   },
   mounted () {
@@ -46,7 +53,6 @@ export default {
       this.showModal()
       sessionStorage.setItem('openPopup', 1)
     }
-    this.position = this.position - 1
   }
 }
 </script>
