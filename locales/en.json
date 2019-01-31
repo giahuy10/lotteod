@@ -54,13 +54,21 @@
     "headerDesc": "",
     "tabs": {
       "tab1": "About Lotte SkyWalk",
-      "tab2": "Facilities guide",
+      "tab2": "Cafe & Store",
       "tab3": "Gallery"
     },
     "about": {
       "text1": "The Lotte SkyWalk Observatory is located at the top of the Lotte Center Hanoi. As the third tallest building in Vietnam, <br>  it is the only place where you can take in a gorgeous 360-degree view of Hanoi, the capital city of Vietnam roaring with brilliant history and dynamic modern culture.",
       "text2": "The Observatory offers a diverse range of unique experiences that can only be had at a thrilling height of 253 meters in the air, including various exhibitions based on the theme \"The Ao Dai of Vietnam,\" <br> a café above the clouds, and exclusive tower-themed souvenirs.",
       "text3": "Visitors can see all of the different facets of Hanoi Sky, <br> ever-changing with the four seasons and time of day."
+    },
+    "facilities": {
+      "headerTitle": "Cafe & Store",
+      "headerDesc": ""
+    },
+    "gallery": {
+      "headerTitle": "Gallery",
+      "headerDesc": ""
     }
   },
   "event": {

@@ -55,12 +55,20 @@
     "tabs": {
       "tab1": "Giới thiệu",
       "tab2": "Ẩm thực - Cửa hàng",
-      "tab3": "Hình ảnh"
+      "tab3": "Thư viện ảnh"
     },
     "about": {
       "text1": "Đài quan sát Lotte nằm trên đỉnh tòa tháp Lotte Center Hà Nội. Là tòa nhà cao thứ ba tại Việt Nam, <br>  đây là nơi duy nhất mà bạn có thể ngắm nhìn quang cảnh 360 độ tuyệt đẹp của Hà Nội, thủ đô của Việt Nam với lịch sử rực rỡ và văn hóa hiện đại năng động.",
       "text2": "Đài quan sát cung cấp một loạt các trải nghiệm độc đáo chỉ có thể có ở độ cao ly kỳ là 253 mét trong không khí, bao gồm các triển lãm khác nhau dựa trên chủ đề \"Tà áo dài Việt Nam,\" <br> một quán cà phê trên mây và những món quà lưu niệm theo chủ đề tháp độc quyền.",
       "text3": "Du khách có thể thấy tất cả các khía cạnh khác nhau của Bầu trời Hanoi, <br> luôn thay đổi theo bốn mùa và thời gian trong ngày."
+    },
+    "facilities": {
+      "headerTitle": "Ẩm thực - Cửa hàng",
+      "headerDesc": ""
+    },
+    "gallery": {
+      "headerTitle": "Thư viện ảnh",
+      "headerDesc": ""
     }
   },
   "event": {

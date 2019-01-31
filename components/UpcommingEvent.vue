@@ -77,6 +77,11 @@ export default {
         }
       }
     }
+    .event-img {
+      img {
+        width: 100%;
+      }
+    }
   }
   .event-title {
     position: absolute;

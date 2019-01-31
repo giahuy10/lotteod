@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <nav aria-label="Page navigation example">
+      <nav aria-label="Page navigation example" v-if="pagesNumber.length > 1">
           <ul class="pagination">
               <li v-if="pagination.pagesCurrent > 1" class="page-item">
                   <a class="page-link" href="#" aria-label="Previous"
@@ -109,7 +109,16 @@ export default {
       this.$router.push({name: 'lang-event-slug', params: {slug: event.alias, id: event.id }})
     }
   },
-  watchQuery: true
+  watchQuery: true,
+  head () {
+    return {
+      title: this.$t('event.headerTitle'),
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
+    }
+  }
 
 }
 </script>
@@ -122,6 +131,22 @@ export default {
   }
   h2 {
     display: none;
+  }
+  .event-content {
+    &:hover {
+      cursor: pointer;
+    }
+    .event-title {
+      h4 {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+    .event-img {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

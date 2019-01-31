@@ -22,7 +22,7 @@
     animation-duration: 80s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    // border-bottom: 0.5em solid #ccc;
+    border-bottom: 0.5em solid red;
     .panorama-cap {
       display: flex;
       align-items: center;

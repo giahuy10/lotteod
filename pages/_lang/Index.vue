@@ -4,7 +4,7 @@
     <Video v-else @videoEnded="endVideo"/>
     <Overview/>
     <UpCommingEvent/>
-    <Galleries/>
+    <Galleries type="homepage"/>
     
    
     <!-- <Interview/> -->

@@ -3,3 +3,14 @@ img, video, iframe {
   max-width: 100%;
 }
 
+.explore {
+    .head-banner {
+      margin-bottom: 0;
+    }
+    .featured-facilities, .galleries {
+      background: none;
+      h2 {
+        display: none;
+      }
+    }
+  }

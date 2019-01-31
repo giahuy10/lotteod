@@ -57,6 +57,14 @@ export default {
   h2 {
     display: none;
   }
+  .event-detail {
+    padding: 40px 0;
+    > p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 </style>
 

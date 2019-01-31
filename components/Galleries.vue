@@ -25,6 +25,7 @@
 <script>
 export default {
   name: 'galleries',
+  props: [ 'type'],
   methods: {
     lightbox (index) {
       this.$refs.myModalRef.show()
@@ -49,12 +50,14 @@ export default {
     },
     handleScroll (event) {
       // Any code to be executed when the window is scrolled
-      let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
-      if (bottomOfWindow) {
-        this.pagination.pagesCurrent++
-        this.pagination.limitstart += this.pagination.limit
-        if (this.pagination.pagesCurrent <= this.pagination.pagesTotal) {
-          this.getItems()
+      if (this.type !="homepage") {
+        let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight
+        if (bottomOfWindow) {
+          this.pagination.pagesCurrent++
+          this.pagination.limitstart += this.pagination.limit
+          if (this.pagination.pagesCurrent <= this.pagination.pagesTotal) {
+            this.getItems()
+          }
         }
       }
     },

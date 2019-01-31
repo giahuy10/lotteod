@@ -2,7 +2,6 @@
   <div class="overview">
     <!-- <div class="stars"></div>
     <div class="twinkling"></div> -->
-    <div class="clouds"></div>
     
     <div class="overview-content">
       <div class="container">
@@ -55,21 +54,13 @@ export default {
           return viOverview
       }
     }
-  },
-  mounted () {
-    // this.getItems()
-  },
-  watch: {
-    lang (to, from) {
-      this.getItems()
-    }
   }
 }
 </script>
 <style lang="scss">
 .overview {
   // padding: 40px 0;
-  background-image: url('/img/bg/lotte-3d.jpg');
+  background-image: url('/img/bg/36456942-1704466299673372-3353941653663514624-o-1537434089364.jpg');
  
    /* Set a specific height */
   // height: 814px; 
@@ -80,8 +71,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
       position: relative;
-      border-top: 0.5em solid #ccc;
-  
+    
   @media screen and (min-width: 990px) and (max-width: 1100px) {
     // height: 715px;
   }
