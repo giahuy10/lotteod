@@ -53,7 +53,16 @@ export default {
       this.showModal()
       sessionStorage.setItem('openPopup', 1)
     }
-  }
+  },
+  head () {
+    return {
+      title: this.$t('homepage.metaTitle'),
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content:  this.$t('homepage.metaDesc')}
+      ]
+    }
+  },
 }
 </script>
 <style lang="scss">
