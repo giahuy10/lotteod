@@ -62,7 +62,8 @@ module.exports = {
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     '@nuxtjs/toast',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    'nuxt-device-detect'
   ],
   toast: {
       position: 'top-right',

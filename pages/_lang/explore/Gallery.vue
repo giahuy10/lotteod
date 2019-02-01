@@ -12,9 +12,6 @@ import ExploreTab from '~/components/ExploreTab'
 import HeaderBanner from '~/components/HeaderBanner.vue'
 export default {
   components: { Galleries, HeaderBanner, ExploreTab },
-  mounted () {
-    console.log('lang/ex/gallery')
-  },
   data () {
     return {
       headerImage: '/img/header/lotte_about_visual.jpg',

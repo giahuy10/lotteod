@@ -17,7 +17,6 @@ export const mutations = {
 export const actions = {
   async getGalleries ({commit}, limitstart) {
     const galleries = await this.$axios.$get(mainURL+'index.php?option=com_od_photo&view=photoimages&Itemid=126&format=raw&limitstart='+limitstart+'&format=raw')
-    console.log(galleries)
     commit('SET_GALLERIES', galleries)
   },
   changePagination ({commit}, newPag) {

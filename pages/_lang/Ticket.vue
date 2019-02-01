@@ -1,5 +1,5 @@
 <template>
-  <div class="ticket">
+  <div class="ticket" :class="'width-'+screenWidth">
     <header-banner :title="$t('ticket.headerTitle')" :desc="$t('ticket.headerDesc')" :img="headerImage"></header-banner>
     <div class="container">
       <div class="ticketing_counter">
@@ -82,7 +82,8 @@ export default {
   name: 'ticket',
   data () {
     return {
-      headerImage: '/img/header/lotte_about_visual.jpg'
+      headerImage: '/img/header/lotte_about_visual.jpg',
+      screenWidth: ''
     }
   },
   head () {
@@ -94,6 +95,9 @@ export default {
       ]
     }
   },
+  mounted () {
+    this.screenWidth = this.$store.state.screenWidth
+  }
 }
 </script>
 <style lang="scss">

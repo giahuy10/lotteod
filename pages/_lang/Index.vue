@@ -31,7 +31,8 @@ export default {
   name: 'home',
   data () {
     return {
-      videoEnd: false
+      videoEnd: false,
+      screenWidth: 'xl'
     }
   },
   async asyncData ({ store }) {
@@ -53,6 +54,7 @@ export default {
       this.showModal()
       sessionStorage.setItem('openPopup', 1)
     }
+    this.screenWidth = this.$store.state.screenWidth
   },
   head () {
     return {

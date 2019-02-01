@@ -69,6 +69,9 @@ export default {
       items: []
     }
   },
+  async asyncData({ store }) {
+    await store.dispatch('setDevice', 'md')
+  },
   methods: {
     handleScroll (event) {
       // Any code to be executed when the window is scrolled
@@ -98,6 +101,20 @@ export default {
     this.getItems()
     if (process.browser) { 
       window.addEventListener('scroll', this.handleScroll)
+      let device = 'xl'
+      // xs- 300 -> 399 |  sm - 400 -> 767 | md - 768 -> 1023 | lg : 1024 -> 1366 | xl: > 1366
+      if(window.innerWidth <= 399) {
+        device = 'xs'
+      } else if (window.innerWidth >= 400 && window.innerWidth <= 767  ) {
+        device = 'sm'
+      } else if (window.innerWidth >= 768 && window.innerWidth <= 1023  ) {
+        device = 'md'
+      } else if (window.innerWidth >= 1024 && window.innerWidth <= 1366  ) {
+        device = 'lg'
+      } else if (window.innerWidth > 1366  ) {
+        device = 'xl'
+      }
+      this.$store.dispatch('setDevice', device)
     }
     
   },
