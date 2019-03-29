@@ -63,7 +63,7 @@ export default {
     },
     getItems () {
       let app = this
-      this.$axios.get('/api/photos')
+      this.$axios.get('https://lotteskywalk.tk/api/photos')
         .then((res) => {
           // app.pagination = res.data.pagination
           app.items = app.items.concat(res.data.items)
