@@ -20,11 +20,11 @@ export const mutations = {
 }
 export const actions = {
   async getEvents ({commit}, para) {
-    const events = await this.$axios.$get('/api/events')
+    const events = await this.$axios.$get('https://lotteskywalk.tk/api/events')
     commit('SET_EVENTS', events)
   },
   async getEventDetail ({commit}, para) {
-    const event = await this.$axios.$get('/api/events/'+para.slug)
+    const event = await this.$axios.$get('https://lotteskywalk.tk/api/events/'+para.slug)
     commit('SET_EVENT_DETAIL', event)
   },
   changePagination ({commit}, newPag) {
