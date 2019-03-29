@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "path": "/index"
+  },
+  {
+    "name": "Explore",
+    "path": "/explore"
+  },
+  {
+    "name": "Event & Promotion",
+    "path": "/event"
+  },
+  {
+    "name": "Ticket",
+    "path": "/ticket"
+  },
+  {
+    "name": "Contact us",
+    "path": "/contact"
+  }
+]

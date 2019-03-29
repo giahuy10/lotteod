@@ -63,10 +63,10 @@ export default {
     },
     getItems () {
       let app = this
-      this.$axios.get(process.env.apiUrl+'/index.php?option=com_od_photo&view=photoimages&Itemid=126&format=raw&limitstart='+this.pagination.limitstart)
+      this.$axios.get('/api/photos')
         .then((res) => {
-          app.pagination = res.data.pagination
-          app.items = app.items.concat(res.data.data)
+          // app.pagination = res.data.pagination
+          app.items = app.items.concat(res.data.items)
           // console.log(app.pagination)
         })
         .catch((err) => {
@@ -91,7 +91,7 @@ export default {
         pagesCurrent: 1,
         pagesTotal: 0
       },
-      host: process.env.apiUrl
+      host: '/img/galleries/homepage/'
     } 
   }
 }
@@ -99,7 +99,7 @@ export default {
 <style lang="scss">
 .galleries {
   padding: 40px 0;
-   background-image: url('/img/bg/e68531dcccc532ce.jpg');
+   background-image: url('/img/bg/overview.png');
   // height: 1164px;
 
   /* Create the parallax scrolling effect */
@@ -175,18 +175,18 @@ export default {
   -webkit-column-gap: 1em;
   -moz-column-gap: 1em;
   column-gap: 1em;
-   margin: 1.5em;
+   margin: 1.5em 0;
     padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
+    -moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
     font-size: .85em;
 }
 .item {
     display: inline-block;
     background: #fff;
-    padding: 5px;
-    margin: 0 0 1.5em;
+  
+    margin: 0 0 5px;
     width: 100%;
 	-webkit-transition:1s ease all;
     box-sizing: border-box;

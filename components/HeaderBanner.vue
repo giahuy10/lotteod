@@ -26,6 +26,7 @@ export default {
     position: relative;
     margin-bottom: 40px;
     height: 345px;
+    background-size: 100% 100%;
     @media screen and (max-width: 767px) {
       height: 200px;
     }
@@ -39,14 +40,14 @@ export default {
       align-items: center;
       justify-content: center;
       color: #fff;
-      background: rgba(0, 0, 0, 0.25);
+      // background: rgba(0, 0, 0, 0.25);
       padding-top: 85px;
       > div {
         padding: 20px;
         // background: rgba(0,0,0,0.5)
       }
       h1 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         @media screen and (max-width: 767px) {
           font-size: 28px;
         }

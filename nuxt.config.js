@@ -4,7 +4,7 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
   env: {
-    baseUrl: process.env.BASE_URL || 'http://lotteodapi.com/',
+    baseUrl: process.env.BASE_URL || 'https://admin.lotteskywalk.tk/',
     apiUrl: configDetail.apiURL,
     host: configDetail.host,
     port: configDetail.port
@@ -24,8 +24,9 @@ module.exports = {
     ]
   },
   router: {
-    middleware: 'i18n'
+    middleware: ['i18n']
   },
+  serverMiddleware: ['~/api/index.js'],
   generate: {
  
   },

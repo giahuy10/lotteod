@@ -8,11 +8,11 @@
             <div v-for="(event, index) in events" :key="index" class="event col-12 col-md-4">
               <div class="event-content" @click="openEvent(event)">
                 <div class="event-img">
-                  <img :src="event.thumbnail" :alt="event.title">
+                  <img :src="event.thumbnail" :alt="event[titleText]">
                 </div>
                 <div class="event-title">
-                  <h4>{{event.title}}</h4>
-                  <p>{{event.date}}</p>
+                  <h4>{{event[titleText]}}</h4>
+                  <p>{{event[dateText]}}</p>
                 </div>
               </div>
               
@@ -29,15 +29,21 @@ export default {
   name: 'upcomming-event',
   methods: {
     openEvent (event) {
-      this.$router.push({name: 'lang-event-slug', params: {slug: event.alias, id: event.id }})
+      this.$router.push({name: 'lang-event-slug', params: {slug: event.slug, id: event.slug }})
     }
   },
   computed: {
+    titleText () {
+      return 'title_'+this.$store.state.locale
+    },
+    dateText () {
+      return 'date_'+this.$store.state.locale
+    },
     lang () {
       return this.$store.state.locale
     },
     events () {
-      return this.$store.state.event.events.data
+      return this.$store.state.event.events
     },
   }
 }

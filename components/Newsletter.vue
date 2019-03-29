@@ -2,14 +2,15 @@
   <div class="newsletter">
     <div class="container">
       <div class="row">
-         <div class="col-12 col-md-8">
+         <div class="col-12 col-md-6">
           <h2>{{ $t("homepage.modtuleTitle.signup") }}</h2>
           <p>{{ $t("homepage.modtuleTitle.signupDesc") }}</p>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-end">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
           <b-form inline>
             <label class="sr-only" for="email">{{ $t("homepage.modtuleTitle.signupName") }}</label>
-            <b-input v-model="email" type="email" class="mb-2 mr-sm-2 mb-sm-0" id="email" v-bind:placeholder="$t('homepage.modtuleTitle.signupEmail')" />
+            <b-input v-model="subscriber.name" type="text" class="mb-2 mr-sm-2 mb-sm-0" id="name" v-bind:placeholder="$t('homepage.modtuleTitle.signupName')" />
+            <b-input v-model="subscriber.email" type="email" class="mb-2 mr-sm-2 mb-sm-0" id="email" v-bind:placeholder="$t('homepage.modtuleTitle.signupEmail')" />
             <b-button variant="danger" @click="subscribe">{{ $t("homepage.modtuleTitle.signupButton") }}</b-button>
           </b-form>
       </div>
@@ -24,22 +25,21 @@ export default {
   name: 'newsletter',
   data () {
     return {
-      email: ''
+      subscriber: {
+        email: '',
+        name: ''
+      }
+      
     }
   },
   methods: {
     subscribe () {
-      if (this.email === '') {
+      if (this.subscriber.email === '') {
         this.$toast.error(this.$t('homepage.signup.blankError'), {duration: 2000, position: 'bottom-right'})
       } else {
-        subscribeEmail(this.email, '')
-          .then((res)=> {
-            if (res.data.status == 1) {
-              this.$toast.success(this.$t('homepage.signup.success'), {duration: 2000, position: 'bottom-right'})
-            } else {
-              this.$toast.error(this.$t('homepage.signup.duplicatedError'), {duration: 2000, position: 'bottom-right'})
-            }
-          })
+        this.$axios.post('/api/newsletters', this.subscriber)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
       }
     }
   }

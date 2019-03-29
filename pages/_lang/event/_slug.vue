@@ -1,8 +1,8 @@
 <template>
   <div class="event">
-    <header-banner :title="$t('event.headerTitle')" :desc="detail.title " :img="headerImage"></header-banner>
+    <header-banner :title="$t('event.headerTitle')" :desc="detail[titleText] " :img="headerImage"></header-banner>
     <div class="container">
-      <div class="event-detail" v-html="detail.text ">
+      <div class="event-detail" v-html="detail[descText] ">
 
       </div>
       
@@ -29,6 +29,12 @@ export default {
     // this.detail = this.$store.state.eventDetail
   },
   computed: {
+    titleText () {
+      return 'title_'+this.$store.state.locale
+    },
+    descText () {
+      return 'desc_'+this.$store.state.locale
+    },
     lang () {
       return this.$store.state.locale
     },

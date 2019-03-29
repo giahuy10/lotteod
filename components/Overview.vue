@@ -60,7 +60,7 @@ export default {
 <style lang="scss">
 .overview {
   // padding: 40px 0;
-  background-image: url('/img/bg/36456942-1704466299673372-3353941653663514624-o-1537434089364.jpg');
+  background-image: url('/img/bg/overview.png');
  
    /* Set a specific height */
   // height: 814px; 

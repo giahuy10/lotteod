@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Bảng điều khiển",
+    "path": "/index"
+  },
+  {
+    "name": "Quản lý hình ảnh",
+    "path": "/explore"
+  },
+  {
+    "name": "Quản lý sự kiện",
+    "path": "/event"
+  },
+  {
+    "name": "Quản lý đặt vé",
+    "path": "/ticket"
+  },
+  {
+    "name": "Email marketing",
+    "path": "/contact"
+  }
+]

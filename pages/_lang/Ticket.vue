@@ -9,7 +9,7 @@
           <source media="(max-width: 375px)" srcset="/img/ticket/345.jpg">
           <source media="(max-width: 768px)" srcset="/img/ticket/768.jpg">
           <source media="(max-width: 1024px)" srcset="/img/ticket/1024.jpg">
-          <img src="/img/ticket/1110.jpg" alt="Flowers" style="width:auto;">
+          <img src="/img/ticket/20190320_121442.jpg" alt="Flowers" style="width:auto;">
         </picture>
         <hr>
       </div>
@@ -54,7 +54,7 @@
       </div>
 
     </div>
-    <div class="rich-snippets">
+    <!-- <div class="rich-snippets">
       <div itemscope itemtype="https://schema.org/Product">
         <span itemprop="brand">Lotte Center Hanoi</span> <span itemprop="name">Observerion Deck Ticket</span>
         
@@ -68,7 +68,7 @@
           <meta itemprop="priceCurrency" content="VND" />
         </span>
       </div>
-    </div>
+    </div> -->
     
   </div>
 </template>

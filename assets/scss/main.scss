@@ -1,16 +1,49 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: futura;
+  src: url('../fonts/SVN-Futura-Regular.otf');
+
+}
+@font-face {
+  font-family: futura;
+  src: url('../fonts/SVN-Futura-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: futura;
+  src: url('../fonts/SVN-Futura-Light.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: futurabook;
+  src: url('../fonts/SVN-Futura-Book.otf');
+ 
+}
+
+@font-face {
+  font-family: futuradem;
+  src: url('../fonts/SVN-Futura-DemiBold.otf');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'futura';
+  font-size: 22px;
+  font-weight: 300;
+}
 img, video, iframe {
   max-width: 100%;
 }
 
 .explore {
-    .head-banner {
-      margin-bottom: 0;
-    }
-    .featured-facilities, .galleries {
-      background: none;
-      h2 {
-        display: none;
-      }
+  .head-banner {
+    margin-bottom: 0;
+  }
+  .featured-facilities, .galleries {
+    background: none;
+    h2 {
+      display: none;
     }
   }
+}

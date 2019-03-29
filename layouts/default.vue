@@ -1,10 +1,10 @@
 <template>
-  <div class="main-layout">
+  <div class="main-layout" :class="lang">
     <header class="">
       <b-navbar toggleable="md" :class="navClass" fixed="top" type="dark" variant="">
         <div class="container">
           <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-          <b-navbar-brand :to="homeURL"><img src="/img/icons/apple-touch-icon-60x60.png" alt="Logo"></b-navbar-brand>
+          <b-navbar-brand :to="homeURL"><img src="/img/logo.png" class="img-logo" alt="Logo"></b-navbar-brand>
           <b-collapse is-nav id="nav_collapse">
             <b-navbar-nav class="mx-md-auto font-coiny">
               <b-nav-item :class="item.name" v-for="(item, index) in items" :key="index" :to="'/'+lang+item.path">
@@ -133,9 +133,9 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   body {
-    font-family: 'Varela Round', sans-serif;
+
     a {
       color: #e4111d;
       &:hover {
@@ -182,10 +182,11 @@ export default {
           font-size: 20px;
           padding: 10px 20px !important;
           color: #fff !important;
+          font-weight: 400;
           &.active {
-            color: #e4111d !important;
+            color: #000 !important;
           }
-          text-transform: uppercase
+        
         }
       }
     }
@@ -222,7 +223,7 @@ export default {
   }
   
   .font-coiny, h2, h3 {
-    font-family: 'Anton', sans-serif !important;
+    // font-family: 'Anton', sans-serif !important;
   }
   .btn-danger {
     color: #fff;
@@ -239,5 +240,8 @@ export default {
   position: fixed;
   top: -1000px;
   left: - 1000px;
+}
+img.img-logo {
+    height: 40px;
 }
 </style>

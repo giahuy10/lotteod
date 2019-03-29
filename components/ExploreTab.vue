@@ -54,7 +54,7 @@ export default {
       text-align: center;
       text-transform: uppercase;
       a {
-        font-weight: bold;
+        
         display: block;
         padding: 10px;
         color: #e4111d ;

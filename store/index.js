@@ -1,4 +1,7 @@
+const cookieparser = process.server ? require('cookieparser') : undefined
+
 export const state = () => ({
+  auth: null,
   locales: [
     {
       code: 'en',
@@ -27,6 +30,9 @@ export const mutations = {
   },
   SET_DEVICE(state, device) {
     state.screenWidth = device
+  },
+  SET_AUTH(state, auth) {
+    state.auth = auth
   }
 }
 export const actions = {
@@ -35,5 +41,17 @@ export const actions = {
   },
   setDevice ({commit}, val) {
     commit('SET_DEVICE', val)
+  },
+  nuxtServerInit({ commit }, { req }) {
+    let auth = null
+    if (req.headers.cookie) {
+      const parsed = cookieparser.parse(req.headers.cookie)
+      try {
+        auth = JSON.parse(parsed.auth)
+      } catch (err) {
+        // No valid cookie found
+      }
+    }
+    commit('SET_AUTH', auth)
   }
 }

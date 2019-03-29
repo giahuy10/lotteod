@@ -5,22 +5,17 @@
       {
         "name": "Escalator",
         "thumbnail": "/img/galleries/top-of-hanoi.jpg",
-        "text": "Escalator filled up with fantastic light going upwards"
+        "text": "From the 1st floor. you can take the escalator down to B1 basement which leads you to the gate of the observatory area."
       },
       {
-        "name": "Bamboo Road",
+        "name": "Bamboo Road and Fog gate",
         "thumbnail": "/img/galleries/Ve-tham-quan-Dai-quan-sat-Lotte-Center-Ha-Noi (1).jpg",
-        "text": "Space with bamboo forest wall and stars-twinkling-night sky"
+        "text": "The road leading to the ticket counter with vivid 3D images which gives you a novel feeling like entering the virtual world."
       },
       {
-        "name": "Fog Gate 1",
+        "name": "Ticket counter",
         "thumbnail": "/img/galleries/lotte-hanoi-2.jpg",
-        "text": ""
-      },
-      {
-        "name": "Ticketing Counter",
-        "thumbnail": "/img/galleries/obs_visit_information_img.jpg",
-        "text": ""
+        "text": "The ticket counter provides information about the prices as well as promotions and rules of the Observation Deck."
       }
     ]
   },
@@ -30,22 +25,17 @@
       {
         "name": "Welcome Theater",
         "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_1.jpg",
-        "text": "Picture experience center to see Hanoi from the past to the future"
+        "text": "The first experience is the introduction images of Lotte Center and the Observation Deck on the big screen."
       },
       {
         "name": "Photo Zone",
         "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_2.jpg",
-        "text": "Zone to take pictures synthesized with prospect view 65F"
-      },
-      {
-        "name": "Fog Gate 2",
-        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_3.jpg",
-        "text": ""
+        "text": "This is the first photographic stop where you can take photos on the background of world landscapes. You can also rent or buy traditional and modern ao dai at the counter."
       },
       {
         "name": "Elevator",
         "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_4.jpg",
-        "text": ""
+        "text": "It will be the next great highlight when you come to the Observation Deck. Let's experience the high speed of the elevator which leads you to the top of Lotte Center in a snap."
       }
     ]
   },
@@ -55,22 +45,32 @@
       {
         "name": "Observatory",
         "thumbnail": "/img/galleries/lotte-hanoi-8.jpg",
-        "text": "Space to enjoy colorful night view and capture image of view glass"
+        "text": "Give you a panoramic view from the farthest locations"
       },
       {
         "name": "View Terrace",
         "thumbnail": "/img/galleries/IMG_1271_385ce.jpg",
-        "text": "View terrace for view of Hanoi at-a-glance"
+        "text": "The automatic machines with 360 degree of the city provide information about famous streets and landmarks in Hanoi."
       },
       {
         "name": "Sky Walk",
         "thumbnail": "/img/galleries/89c5811795dc4ea2bd196960f77744dd.jpg",
-        "text": "Observatory with amazing experience like walking on clouds"
+        "text": "The area always leaves an unforgettable impression not only for foreign visitors but also domestic guests. It is a chance to walk in the air at an altitude of 272 meters to look around."
       },
       {
         "name": "Photo Counter",
         "thumbnail": "/img/galleries/obs_overview_img.jpg",
-        "text": ""
+        "text": "Ideal area not only for couples but also families who like to capture unique pictures with big heart backdrop"
+      },
+      {
+        "name": "Freeing sad memories",
+        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "text": "Pencil box and eraser: Successful in the ideal photography area in Korea, image of pencil box and eraser means the desire for sad memories to be replaced and filled with happy moments."
+      },
+      {
+        "name": "Freeing sad memories",
+        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "text": "Angel wings: Taking amazing photos with angel wing background. Relax your body, imagine yourself spreading wide wings with the desire to conquer the vast sky."
       }
     ]
   },
@@ -80,12 +80,12 @@
       {
         "name": "Sky Dating Garden",
         "thumbnail": "/img/galleries/IMG_E0214.JPG",
-        "text": "Space where write messages and take a picture with event"
+        "text": "Placed in front of the elevator gate, the heart-shaped frame on the Observation Deck wishes everyone taking photos here happiness and closeness"
       },
       {
         "name": "Love Photo Zone",
         "thumbnail": "/img/galleries/IMG_E0196.JPG",
-        "text": ""
+        "text": "You want to send a message to your partner? So let us convey this message to your lover through Post Card in this area."
       }
     ]
   }

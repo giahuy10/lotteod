@@ -4,24 +4,24 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6">
-          <form>
+          <form v-on:submit.prevent="submitContact">
             <div class="form-group">
               <label for="" v-text="$t('contact.nameLabel')"></label>
-              <input type="text" class="form-control" id="" :placeholder="$t('contact.nameDesc')">
+              <input type="text" v-model="contact.name" class="form-control" id="" :placeholder="$t('contact.nameDesc')">
             </div>
             <div class="form-group">
               <label for="" v-text="$t('contact.mailLabel')"></label>
-              <input type="email" class="form-control" id="" :placeholder="$t('contact.mailDesc')">
+              <input type="email" v-model="contact.email" class="form-control" id="" :placeholder="$t('contact.mailDesc')">
             </div>
             <div class="form-group">
               <label for="" v-text="$t('contact.phoneLabel')"></label>
-              <input type="text" class="form-control" id="" :placeholder="$t('contact.phoneDesc')">
+              <input type="text" v-model="contact.phone" class="form-control" id="" :placeholder="$t('contact.phoneDesc')">
             </div>
             <div class="form-group">
               <label for="" v-text="$t('contact.messageLabel')"></label>
-              <textarea class="form-control" name="" id="" cols="30" rows="10" :placeholder="$t('contact.messageeDesc')"></textarea>
+              <textarea class="form-control" v-model="contact.message" name="" id="" cols="30" rows="10" :placeholder="$t('contact.messageeDesc')"></textarea>
             </div>
-            <button type="submit" class="btn btn-danger">{{$t('contact.submitLabel')}}</button>
+            <button type="submit" class="btn btn-danger" @click.prevent="submitContact">{{$t('contact.submitLabel')}}</button>
           </form>
         </div>
         <div class="col-12 col-md-6">
@@ -41,7 +41,14 @@ export default {
   name: 'contact',
   data () {
     return {
-      headerImage: '/img/header/lotte_about_visual.jpg'
+      headerImage: '/img/header/lotte_about_visual.jpg',
+      contact: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      }
+
     }
   },
   head () {
@@ -51,6 +58,13 @@ export default {
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         { hid: 'description', name: 'description', content: 'My custom description' }
       ]
+    }
+  },
+  methods: {
+    submitContact () {
+      this.$axios.post('/api/contacts', this.contact)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
     }
   }
 }

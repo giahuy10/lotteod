@@ -11,7 +11,7 @@
     <Newsletter/>
     <b-modal class="onlyMain" ref="promotion" centered size="xl"  hide-footer hide-title>
       <div class="d-block text-center">
-        <img src="https://platinumlist.net/upload/event/sky_music_night_2018_1970_jan_01_lotte_observation_deck_67255-full1517136841.jpg" alt="">
+        <img src="/img/events/web banner-promo -02.png" alt="">
       </div>
     </b-modal>
   </div>

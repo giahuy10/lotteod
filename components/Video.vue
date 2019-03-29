@@ -68,9 +68,9 @@ export default {
     }
     h1 {
       font-size: 100px;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: bold;
-      font-family: 'Anton', sans-serif;
+      // font-family: 'Anton', sans-serif;
       text-shadow: 1px 2px #ad0000;
       @media screen and (max-width: 767px){
         font-size: 30px;
@@ -79,7 +79,7 @@ export default {
     h2 {
       font-size: 50px;
       font-family: 'Anton', sans-serif !important;
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
   }
   @keyframes displayVideoHeading {

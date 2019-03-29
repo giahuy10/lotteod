@@ -1,5 +1,6 @@
 const express = require('express')
 const consola = require('consola')
+var bodyParser = require('body-parser')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 // const env = require('dotenv').config()
@@ -21,10 +22,14 @@ async function start() {
     const builder = new Builder(nuxt)
     await builder.build()
   }
-
+  app.use(bodyParser.urlencoded({ extended: false }))
+ 
+  // parse application/json
+  app.use(bodyParser.json())
+  
   // Give nuxt middleware to express
   app.use(nuxt.render)
-
+ 
   // Listen the server
   app.listen(port, host)
   consola.ready({

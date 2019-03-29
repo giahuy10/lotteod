@@ -34,14 +34,14 @@
     h1 {
       animation-name: runHeading;
       animation-duration: 1s;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: bold;
       color: #fff;
       text-shadow: 0 0 1px red;
       font-size: 50px;
     }
     h2 {
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: bold;
       color: #fff;
       text-shadow: 0 0 1px red;
