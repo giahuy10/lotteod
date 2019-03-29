@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <nav aria-label="Page navigation example" v-if="pagesNumber.length > 1">
+      <!-- <nav aria-label="Page navigation example" v-if="pagesNumber.length > 1">
           <ul class="pagination">
               <li v-if="pagination.pagesCurrent > 1" class="page-item">
                   <a class="page-link" href="#" aria-label="Previous"
@@ -36,7 +36,7 @@
                   </a>
               </li>
           </ul>
-      </nav>
+      </nav> -->
     </div>
     
   </div>
@@ -65,30 +65,30 @@ export default {
   computed: {
     events () {
       // console.log(this.$store.state.event.events)
-      return this.$store.state.event.events.data
+      return this.$store.state.event.events
     },
-    pagination () {
-      return this.$store.state.event.pagination
-    },
-    isActived: function () {
-      return this.pagination.pagesCurrent;
-    },
-    pagesNumber: function () {
-      var from = this.pagination.pagesCurrent - this.offset;
-      if (from < 1) {
-        from = 1;
-      }
-      var to = from + (this.offset * 2);
-      if (to >= this.pagination.pagesTotal) {
-        to = this.pagination.pagesTotal;
-      }
-      var pagesArray = [];
-      while (from <= to) {
-        pagesArray.push(from);
-        from++;
-      }
-      return pagesArray;
-    }
+    // pagination () {
+    //   return this.$store.state.event.pagination
+    // },
+    // isActived: function () {
+    //   return this.pagination.pagesCurrent;
+    // },
+    // pagesNumber: function () {
+    //   var from = this.pagination.pagesCurrent - this.offset;
+    //   if (from < 1) {
+    //     from = 1;
+    //   }
+    //   var to = from + (this.offset * 2);
+    //   if (to >= this.pagination.pagesTotal) {
+    //     to = this.pagination.pagesTotal;
+    //   }
+    //   var pagesArray = [];
+    //   while (from <= to) {
+    //     pagesArray.push(from);
+    //     from++;
+    //   }
+    //   return pagesArray;
+    // }
   },
   methods : {
     changePage: function (page) {
@@ -106,7 +106,7 @@ export default {
     },
     openEvent (event) {
       // console.log(this.$router.options.routes)
-      this.$router.push({name: 'lang-event-slug', params: {slug: event.alias, id: event.id }})
+      this.$router.push({name: 'lang-event-slug', params: {slug: event.slug }})
     }
   },
   watchQuery: true,
