@@ -27,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div id="logo-footer" class="col-12 col-md-2 d-flex align-items-center center-mobile">
-            <img src="/img/icons/apple-touch-icon-60x60.png" alt="Logo">
+            <img src="/img/logo.png" alt="Logo">
           </div>
           <div class="col-12 col-md-6">
             <p class="text-center">{{ $t("homepage.footer.line1") }}

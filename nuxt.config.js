@@ -4,7 +4,7 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
   env: {
-    baseUrl: process.env.BASE_URL || 'https://admin.lotteskywalk.tk/',
+    baseUrl: process.env.BASE_URL || '/',
     apiUrl: configDetail.apiURL,
     host: configDetail.host,
     port: configDetail.port
@@ -75,6 +75,7 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    // baseURL: '/',
   },
 
   /*

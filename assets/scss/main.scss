@@ -27,9 +27,37 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family:'notoR';
+  src: url('../fonts/notokr-regular.eot');
+  src: url('../fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/notokr-regular.woff') format('woff'),
+       url('../fonts/notokr-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'notoB';
+  src: url('../fonts/notokr-bold.eot');
+  src: url('../fonts/notokr-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/notokr-bold.woff') format('woff'),
+       url('../fonts/notokr-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyLotteMedium';
+  src: url('../fonts/MyLOTTE_KR_Medium.eot');
+  src: url('../fonts/MyLOTTE_KR_Medium.eot') format('embedded-opentype'),
+       url('../fonts/MyLOTTE_KR_Medium.woff') format('woff'),
+       url('../fonts/MyLOTTE_KR_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli');
 body {
-  font-family: 'futura';
-  font-size: 22px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
   font-weight: 300;
 }
 img, video, iframe {

@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+var cors = require('cors')
+app.use(cors())
 var eventsRoute = require('./routes/events')
 var photosRoute = require('./routes/photos')
 var contactsRoute = require('./routes/contacts')

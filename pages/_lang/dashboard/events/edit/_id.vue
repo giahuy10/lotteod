@@ -8,7 +8,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Title</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" v-model="item.title_vi" placeholder="Event title in vietnamese">
+              <input type="text" class="form-control" v-model="item.title_vi" placeholder="Event title in vietnamese">
             </div>
           </div>
           <div class="form-group row">
@@ -22,7 +22,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Date</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" v-model="item.date_vi" placeholder="Date in vietnamese">
+              <input type="text" class="form-control" v-model="item.date_vi" placeholder="Date in vietnamese">
             </div>
           </div>
         </b-tab>
@@ -30,7 +30,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Title</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" v-model="item.title_en" placeholder="Event title in english">
+              <input type="text" class="form-control" v-model="item.title_en" placeholder="Event title in english">
             </div>
           </div>
           <div class="form-group row">
@@ -44,7 +44,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Date</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" v-model="item.date_en" placeholder="Date in english">
+              <input type="text" class="form-control" v-model="item.date_en" placeholder="Date in english">
             </div>
           </div>
         </b-tab>

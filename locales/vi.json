@@ -38,7 +38,7 @@
     "headerDesc": "Chúng tôi trân trọng hướng dẫn thông tin sử dụng Đài quan sát.",
     "ticketCounter": "Quầy vé",
     "ticketCounterDesc": "Bạn có thể mua vé sử dụng đài quan sát tại quầy vé B1.",
-    "observerionGuide": "Hướng dẫn sử dụng đài quan sát",
+    "observerionGuide": "Hướng dẫn sử dụng dịch vụ tại Đài quan sát",
     "useTime": "<span><i class='fa fa-clock'></i> Thời gian sử dụng </span> 09:00 ~ 24:00",
     "fee": "<span><i class='fa fa-money'></i> Giá vé</span>",
     "unit": "(VND/Người)",
@@ -49,7 +49,7 @@
       "adult" : "Người lớn <br> (trên 12 tuổi)",
       "children": "Trẻ em (3 ~ 12 tuổi)"
     },
-    "note": "<ul><li>Giá ưu đãi chỉ áp dụng cho công dân Việt Nam. </li> <li>Trẻ nhỏ dưới 3 tuổi được miễn phí.</li> <li>Giá vé đã bao gồm VAT (10%)</li> <li>Mua vé tại quầy vé B1 trước 23:0.</li></ul>"
+    "note": "<ul><li>Giá ưu đãi chỉ áp dụng cho công dân Việt Nam. </li> <li>Trẻ nhỏ dưới 3 tuổi được miễn phí.</li> <li>Giá vé đã bao gồm VAT (10%)</li> <li>Mua vé tại quầy vé B1 trước 23:00.</li></ul>"
   },
   "explore": {
     "headerTitle": "Khám phá đài quan sát Lotte",

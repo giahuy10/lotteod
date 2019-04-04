@@ -84,7 +84,8 @@ export default {
   h2 {
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #fff;
+    color: #e4111d;
+    font-weight: bold;
     span {
       color: #e4111d;
     }

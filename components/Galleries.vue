@@ -63,7 +63,7 @@ export default {
     },
     getItems () {
       let app = this
-      this.$axios.get('https://lotteskywalk.tk/api/photos')
+      this.$axios.get('/api/photos')
         .then((res) => {
           // app.pagination = res.data.pagination
           app.items = app.items.concat(res.data.items)
@@ -99,7 +99,7 @@ export default {
 <style lang="scss">
 .galleries {
   padding: 40px 0;
-   background-image: url('/img/bg/overview.png');
+   background-image: url('/img/bg/IMG-3832.jpg');
   // height: 1164px;
 
   /* Create the parallax scrolling effect */
@@ -110,7 +110,8 @@ export default {
   h2 {
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #fff;
+    color: #e4111d;
+    font-weight: bold;
     span {
       color: #e4111d;
     }

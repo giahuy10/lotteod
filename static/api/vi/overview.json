@@ -4,17 +4,17 @@
     "section": [
       {
         "name": "Escalator",
-        "thumbnail": "/img/galleries/top-of-hanoi.jpg",
+        "thumbnail": "/img/overview/1.escalator.jpg",
         "text": "Từ tầng 1 bạn có thể đi thang máy xuống hầm B1 đường dẫn bạn tới cổng khu vực đài quan sát."
       },
       {
         "name": "Bamboo Road and Fog gate",
-        "thumbnail": "/img/galleries/Ve-tham-quan-Dai-quan-sat-Lotte-Center-Ha-Noi (1).jpg",
+        "thumbnail": "/img/overview/Ve-tham-quan-Dai-quan-sat-Lotte-Center-Ha-Noi (1).jpg",
         "text": "Con đường dẫn vào quầy vé với hình ảnh 3D sống động, tại cho bạn cảm giác mới lạ như bước chân vào thế giới ảo."
       },
       {
         "name": "Ticketing Counter",
-        "thumbnail": "/img/galleries/obs_visit_information_img.jpg",
+        "thumbnail": "/img/overview/1. Ticket counter.jpg",
         "text": "Quầy vé sẽ cung cấp các thông tin về giá bán cũng như các chương trình khuyến mãi và nội quy của Đài quan sát."
       }
     ]
@@ -24,18 +24,23 @@
     "section": [
       {
         "name": "Welcome Theater",
-        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_1.jpg",
+        "thumbnail": "/img/overview/1.welcome theater.jpg",
         "text": "Điều đầu tiên bạn sẽ được trải nghiệm với các hình ảnh giới thiệu về tòa Lotte Center cũng như đài quan sát và các địa danh thắng cảnh ở Việt Nam trên màn hình rộng lớn."
       },
       {
         "name": "Photo Zone",
-        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_2.jpg",
+        "thumbnail": "/img/overview/1. Photo zone.jpeg",
         "text": "Nơi đây là điểm dừng chân chụp ảnh đầu tiên bạn có thể lưu giữ hình ảnh của mình trên phông nền các danh lam thắng cảnh thế giới. Bạn cũng có thể thuê hoặc mua áo dài tại quầy để có được những tấm ảnh vừa mang tính truyền thống vừa mang tính tinh tế, hiện đại."
       },
       {
         "name": "Elevator",
-        "thumbnail": "https://www.lottecenter.com.vn/eng/images/obs_overview_img2_4.jpg",
+        "thumbnail": "/img/overview/1. Elevator.jpg",
         "text": "Chắc hẳn đây sẽ là điểm nhấn tuyệt vời tiếp theo khi bạn đến với Đài quan sát. Hãy cùng trải nghiệm tốc độ nhanh của thang máy sẽ dẫn bạn lên Đài quan sát Lotte chỉ trong tích tắc."
+      },
+      {
+        "name": "Quầy áo dài",
+        "thumbnail": "/img/overview/1. quầy áo dài.jpg",
+        "text": ""
       }
     ]
   },
@@ -44,32 +49,32 @@
     "section": [
       {
         "name": "Observatory",
-        "thumbnail": "/img/galleries/lotte-hanoi-8.jpg",
+        "thumbnail": "/img/overview/1.Observatory.jpeg",
         "text": "Ống nhòm quan sát thành phố từ xa giúp bạn có cái nhìn tận cảnh từ những địa điểm xa nhất"
       },
       {
         "name": "View Terrace",
-        "thumbnail": "/img/galleries/IMG_1271_385ce.jpg",
+        "thumbnail": "/img/overview/IMG_1271_385ce.jpg",
         "text": "Máy tự động chụp cận cảnh 360độ toàn thành phố, cung cấp thông tin về những con phố, địa danh nổi tiếng tại Hà Nội."
       },
       {
         "name": "Sky Walk",
-        "thumbnail": "/img/galleries/89c5811795dc4ea2bd196960f77744dd.jpg",
+        "thumbnail": "/img/overview/1.Sky walk.jpg",
         "text": "Khu vực luôn để lại ấn tượng khó phai không chỉ cho du khách nước ngoài mà còn những vị khách trong nước bởi bạn sẽ có cơ hội bước đi trên không ở độ cao 272m ngắm nhìn xung quanh"
       },
       {
         "name": "Photo Counter",
-        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "thumbnail": "/img/overview/1. Love Photo Zone.jpg",
         "text": "Khu vực lý tưởng không chỉ cho các cặp đôi mà gia đình hay các nhóm bạn đều rất thích thu lưu giữ tấm hình độc đáo cùng với phông nền trái tim"
       },
       {
         "name": "Freeing sad memories",
-        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "thumbnail": "/img/overview/1. Freeingsad hộp bút chì.jpeg",
         "text": "Mang lại thành công về khu vực lý tưởng chụp ảnh tại hàn Quốc, hình ảnh hộp bút chì và chiếc tẩy mang ý nghĩa mong muốn những kí ức buồn được lấp đi và đong đầy bởi những phút giây hạnh phúc."
       },
       {
         "name": "Freeing sad memories",
-        "thumbnail": "/img/galleries/obs_overview_img.jpg",
+        "thumbnail": "/img/overview/1. Cánh thiên thần Freeing sad memories.jpg",
         "text": "Hãy trải nghiệm chụp hình cùng đôi cánh thiên thần này nhé. Thả lỏng và thư giãn cơ thể, tưởng tượng mình đang dang đôi cánh rộng cùng với khao khát hoài bão được chinh phục bầu trời rộng lớn."
       }
     ]
@@ -79,12 +84,12 @@
     "section": [
       {
         "name": "Sky Dating Garden",
-        "thumbnail": "/img/galleries/IMG_E0214.JPG",
+        "thumbnail": "/img/overview/IMG_E0214.JPG",
         "text": "Đặt ngay trước cổng thang máy, khung hình trái tim trên Đài Quan sát mong muốn bất kỳ ai khi chụp hình tại đây đều có những khoảnh khắc gắn kết và vui vẻ bên nhau."
       },
       {
         "name": "Love Photo Zone",
-        "thumbnail": "/img/galleries/IMG_E0196.JPG",
+        "thumbnail": "/img/overview/IMG_E0196.JPG",
         "text": "Bạn muốn gửi lời nhắn nhủ cho nửa kia của mình? Vậy hãy cùng chúng tôi truyền tải thông điệp này đến nửa kia của bạn qua Thiệp lời nhắn ở khu vực này nhé."
       }
     ]

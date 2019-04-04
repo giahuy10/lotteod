@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss">
 .upcomming-event {
-   background-image: url('/img/bg/out-of-focus-studio-lights-blurred-de-focused-light-color-lights-blur-background_bciy-8alg_thumbnail-full01.png');
+   background-image: url('/img/bg/IMG_20190401_153603.jpg');
  
    /* Set a specific height */
   // height: 814px; 
@@ -66,7 +66,8 @@ export default {
   h2 {
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #fff;
+    color: #e4111d;
+    font-weight: bold;
     span {
       color: #e4111d;
     }
